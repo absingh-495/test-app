@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  const [post, setPost] = React.useState(null);
   const data = localStorage.getItem("studentRecord");
   console.log(data);
 
@@ -10,7 +11,7 @@ function App() {
   const [mobileNumner, setMobile] = useState("");
   const [email, setEmail] = useState("");
   const [eNumber, setENumber] = useState("");
-  const [studentsAddress , stdAddress] = useState([]);
+  const [studentsAddress , stdAddress] = useState("");
   const [studentsRecords, setStudent] = useState([]);
 
   const onSubmit = () => {
